@@ -21,7 +21,7 @@ const contactUsRegister = asyncHandler(async (req, res, next) => {
     message
   });
  
-  mailController.mailOptions.to = [email,"dhruvpatel16122037@gmail.com"];
+  mailController.mailOptions.to = [email,"hrshptl299@gmail.com","pristinehighprofileservice@gmail.com"];
   mailController.mailOptions.subject = service;
   mailController.mailOptions.html = `<b><lable style="color:black">Name:<lable>${name}<br>
   <lable style="color:black">Email:<lable>${email}<br>
