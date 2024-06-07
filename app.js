@@ -22,7 +22,9 @@ app.use(express.json());
 
 //routes
 app.use('/api',contactRoute);
-
+app.get('/api',()=>{
+  console.log("success");
+})
 app.post('/api/formdata', (req, res) => {
  // res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
   const formData = req.body;

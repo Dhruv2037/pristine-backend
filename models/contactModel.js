@@ -10,7 +10,7 @@ const contactSchema = new Schema(
     email: {
       type: String,
       required: [true, "Please add your email"],
-      unique: true,
+      unique: false,
       trim: true,
       lowercase: true,
       match: [/^\S+@\S+\.\S+$/, 'Please use a valid email address']
